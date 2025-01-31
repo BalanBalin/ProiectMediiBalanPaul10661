@@ -1,0 +1,37 @@
+﻿@page
+@model ProiectMediiBalanPaul10661.Pages.Doctor.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Doctori</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctori.Nume)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doctori.Nume)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctori.Prenume)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doctori.Prenume)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctori.Specializare)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doctori.Specializare)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Doctori.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
